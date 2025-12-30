@@ -1,0 +1,5 @@
+# Python dependencies for Hello World Flask Application
+# Migrated from Node.js (package.json had zero external dependencies)
+# Flask replaces Node.js built-in http module for HTTP server functionality
+
+Flask==3.1.0
