@@ -1,66 +1,97 @@
-# hao-backprop-test
+# Burger Palace 🍔
 
-Hello World Flask HTTP Server - Migrated from Node.js to Python/Flask.
-
-## Description
-
-A simple HTTP server that responds with "Hello, World!" to all HTTP requests on any path. This project was originally written in Node.js and has been completely rewritten as a Python/Flask application while maintaining 100% feature and behavior parity with the original implementation.
+A modern burger restaurant website built with Vite, React, and TypeScript. Features include online ordering, user authentication, and table booking for dine-in.
 
 ## Features
 
-- Responds to ALL HTTP methods (GET, POST, PUT, DELETE, HEAD, OPTIONS, PATCH, TRACE, CONNECT)
-- Accepts ALL URL paths (/, /any/path, /deeply/nested/path, etc.)
-- Returns HTTP status 200 OK
-- Returns Content-Type: text/plain
-- Returns "Hello, World!\n" as response body
-- Server binds to 127.0.0.1:3000
+- **Browse Menu**: View our delicious selection of burgers, sides, drinks, and desserts
+- **Order Online**: Add items to cart and checkout for pickup, delivery, or dine-in
+- **Book a Table**: Reserve a table for your dining experience
+- **User Authentication**: Create an account to save your orders and bookings
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-## Requirements
+## Tech Stack
 
-- Python 3.9 or higher
-- Flask 3.1.0
+- **Frontend**: React 19 + TypeScript
+- **Build Tool**: Vite 6
+- **Styling**: Tailwind CSS 3
+- **State Management**: Zustand 5
+- **Routing**: React Router 7
+- **Icons**: Lucide React
 
-## Setup
+## Getting Started
 
-1. Create a virtual environment (recommended):
+### Prerequisites
+
+- Node.js 18+ (LTS recommended)
+- npm 9+
+
+### Installation
+
+1. Clone the repository:
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   git clone <repository-url>
+   cd burger-restaurant
    ```
 
 2. Install dependencies:
    ```bash
-   pip install -r requirements.txt
+   npm install
    ```
 
-## Running the Server
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+### Building for Production
 
 ```bash
-python app.py
+npm run build
 ```
 
-The server will start and display:
-```
-Server running at http://127.0.0.1:3000/
-```
+The built files will be in the `dist` directory.
 
-## Testing
-
-You can test the server using curl:
+### Preview Production Build
 
 ```bash
-curl http://127.0.0.1:3000/
+npm run preview
 ```
 
-Expected output:
+## Project Structure
+
 ```
-Hello, World!
+src/
+├── components/          # Reusable UI components
+│   ├── auth/           # Authentication forms
+│   ├── booking/        # Table booking components
+│   ├── cart/           # Shopping cart components
+│   ├── layout/         # Layout components (Navbar, Footer)
+│   └── menu/           # Menu item components
+├── data/               # Static data (menu items)
+├── pages/              # Page components
+├── store/              # Zustand state stores
+├── types/              # TypeScript type definitions
+├── App.tsx             # Main app with routing
+├── main.tsx            # Application entry point
+└── index.css           # Global styles with Tailwind
 ```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Demo Credentials
+
+For testing the login functionality:
+- **Email**: demo@burgerpalace.com
+- **Password**: demo123
 
 ## License
 
-MIT
-
-## Author
-
-hxu
+MIT License - feel free to use this project for learning or as a starting point for your own restaurant website!
