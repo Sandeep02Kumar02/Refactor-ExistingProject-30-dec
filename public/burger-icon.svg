@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Top Bun -->
+  <path d="M8 28 C8 16 20 8 32 8 C44 8 56 16 56 28 L8 28" fill="#D4A574" stroke="#9A6B4A" stroke-width="1"/>
+  <!-- Sesame Seeds -->
+  <ellipse cx="20" cy="18" rx="2" ry="1.5" fill="#FFF8DC"/>
+  <ellipse cx="32" cy="14" rx="2" ry="1.5" fill="#FFF8DC"/>
+  <ellipse cx="44" cy="18" rx="2" ry="1.5" fill="#FFF8DC"/>
+  <ellipse cx="26" cy="22" rx="2" ry="1.5" fill="#FFF8DC"/>
+  <ellipse cx="38" cy="22" rx="2" ry="1.5" fill="#FFF8DC"/>
+  <!-- Lettuce -->
+  <path d="M6 32 Q10 28 14 32 Q18 28 22 32 Q26 28 30 32 Q34 28 38 32 Q42 28 46 32 Q50 28 54 32 Q58 28 58 32 L6 32" fill="#228B22" stroke="#1A6B1A" stroke-width="0.5"/>
+  <!-- Tomato -->
+  <rect x="8" y="32" width="48" height="6" rx="2" fill="#DC143C"/>
+  <!-- Cheese -->
+  <path d="M6 38 L10 44 L18 38 L26 44 L34 38 L42 44 L50 38 L58 44 L58 38 L6 38" fill="#FFD700"/>
+  <!-- Patty -->
+  <rect x="8" y="44" width="48" height="8" rx="2" fill="#8B4513" stroke="#5D2E0A" stroke-width="0.5"/>
+  <!-- Bottom Bun -->
+  <path d="M8 52 L56 52 C56 58 44 62 32 62 C20 62 8 58 8 52" fill="#D4A574" stroke="#9A6B4A" stroke-width="1"/>
+</svg>
