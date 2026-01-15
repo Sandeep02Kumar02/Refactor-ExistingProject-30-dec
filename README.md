@@ -1,71 +1,127 @@
-# hao-backprop-test
+# 🍔 Burger Bliss
 
-A Flask-based HTTP server that responds with "Hello, World!" to all requests.
-
-test project for backprop integration. Do not touch!
-
-## Technology Stack
-
-- **Language**: Python 3.9+
-- **Framework**: Flask 3.1.0
-- **Server**: Flask development server
+A modern burger restaurant website built with Vite, React, and TypeScript. Features user authentication, online ordering, and table reservations.
 
 ## Features
 
-- Responds to ALL HTTP methods (GET, POST, PUT, DELETE, PATCH, etc.)
-- Responds to ALL URL paths (/, /any/path, /deeply/nested/path, etc.)
-- Returns `Hello, World!\n` with `Content-Type: text/plain`
-- Binds to `127.0.0.1:3000` (localhost only)
+- **User Authentication**: Login and registration with session persistence
+- **Menu Browsing**: Browse our delicious menu with filtering and search
+- **Online Ordering**: Add items to cart with customizations and checkout
+- **Table Booking**: Reserve tables for dine-in experiences
+- **Responsive Design**: Beautiful UI that works on all devices
+- **Modern Stack**: Built with Vite, React 18, TypeScript, and Tailwind CSS
 
-## Setup
+## Tech Stack
 
-1. Create and activate a virtual environment (recommended):
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite 5
+- **Styling**: Tailwind CSS 3.4
+- **Routing**: React Router DOM 6
+- **Icons**: Lucide React
+- **State Management**: React Context API
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+git clone <repository-url>
+cd burger-restaurant
 ```
 
 2. Install dependencies:
-
 ```bash
-pip install -r requirements.txt
+npm install
 ```
 
-## Running the Server
-
+3. Start the development server:
 ```bash
-python app.py
+npm run dev
 ```
 
-The server will start and display:
-```
-Server running at http://127.0.0.1:3000/
-```
+4. Open your browser and navigate to `http://localhost:3000`
 
-## Testing
+### Demo Credentials
 
-Send a request to the server:
+For testing purposes, use these demo credentials:
+- **Email**: demo@burgerbliss.com
+- **Password**: demo123
 
-```bash
-curl http://127.0.0.1:3000/
-```
+## Available Scripts
 
-Expected response:
-```
-Hello, World!
-```
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
 ## Project Structure
 
 ```
-/
-├── README.md           # This file
-├── app.py              # Flask application entry point
-├── pyproject.toml      # Python package configuration
-└── requirements.txt    # Python dependencies
+src/
+├── components/        # Reusable UI components
+│   ├── Header.tsx    # Navigation header
+│   ├── Footer.tsx    # Site footer
+│   └── MenuItemCard.tsx  # Menu item display card
+├── context/          # React Context providers
+│   ├── AuthContext.tsx   # Authentication state
+│   └── CartContext.tsx   # Shopping cart state
+├── data/             # Mock data
+│   └── menuData.ts   # Menu items and categories
+├── pages/            # Page components
+│   ├── HomePage.tsx      # Landing page
+│   ├── MenuPage.tsx      # Full menu listing
+│   ├── OrderPage.tsx     # Online ordering
+│   ├── BookingPage.tsx   # Table reservations
+│   ├── LoginPage.tsx     # User login
+│   ├── RegisterPage.tsx  # User registration
+│   ├── CartPage.tsx      # Shopping cart
+│   └── ProfilePage.tsx   # User profile
+├── types/            # TypeScript type definitions
+│   └── index.ts      # All type exports
+├── App.tsx           # Main app component with routing
+├── main.tsx          # Application entry point
+└── index.css         # Global styles and Tailwind
 ```
+
+## Features Overview
+
+### 🔐 Authentication
+- User registration with password strength validation
+- Secure login with session persistence
+- Profile management
+
+### 🍔 Menu
+- Browse items by category (Burgers, Sides, Drinks, Desserts, Combos)
+- Search functionality
+- Filter by popular or new items
+- Detailed item view with ingredients and calories
+
+### 🛒 Online Ordering
+- Add items to cart
+- Adjust quantities
+- Apply promo codes
+- Checkout process
+
+### 📅 Table Booking
+- Select date and time
+- Choose party size
+- Add special requests
+- Confirmation with booking details
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ and 🍔 by Burger Bliss Team
