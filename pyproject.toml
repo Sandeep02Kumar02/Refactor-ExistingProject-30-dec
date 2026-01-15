@@ -1,0 +1,57 @@
+# Python project configuration following PEP 621
+# Transformed from package.json for Node.js to Python/Flask migration
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Project identity preserved from original package.json
+name = "hello_world"
+version = "1.0.0"
+
+# Description updated to reflect Python/Flask technology stack
+description = "Hello world in Python/Flask"
+
+# Author information transformed from package.json "author": "hxu"
+authors = [
+    {name = "hxu"}
+]
+
+# License preserved from package.json "license": "MIT"
+license = {text = "MIT"}
+
+# Python version requirement for Flask 3.1.x compatibility
+requires-python = ">=3.9"
+
+# Project dependencies - Flask web framework
+dependencies = [
+    "flask>=3.1.0"
+]
+
+# Project classifiers for PyPI metadata
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Framework :: Flask",
+    "Operating System :: OS Independent",
+]
+
+# Keywords for project discoverability
+keywords = ["flask", "hello-world", "http-server", "web"]
+
+# Project URLs for reference
+[project.urls]
+"Homepage" = "https://github.com/hxu/hello_world"
+
+# Optional dependencies for development
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
